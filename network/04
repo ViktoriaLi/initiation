@@ -1,0 +1,1 @@
+netstat -nr | grep default | cut -c 20- | cut -d " " -f1
