@@ -1,1 +1,2 @@
 ls -LRlh /var
+sudo du -h /var/*

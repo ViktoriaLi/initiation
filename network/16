@@ -2,4 +2,4 @@ nslookup intra.42.fr
 nslookup 46.19.122.85
 
 open /etc/hosts file and add:
-163.172.250.11 prod1-hadopi-web.integra.fr.
+46.19.122.85 intra.42.fr

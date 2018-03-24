@@ -1,2 +1,2 @@
-parted
 cat /proc/partitions
+sudo fdisk -l
