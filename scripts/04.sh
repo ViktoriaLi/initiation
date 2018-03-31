@@ -1,1 +1,5 @@
-@midnight user mail root
+md5sum /etc/crontab > $1
+sudo crontab -e @midnight current = md5sum /etc/crontab && if [[ $1 != $sum ]]
+then user mail root && md5sum /etc/crontab > $1 > $2
+chmod 755 $2
+mv $2 /etc/cron.daily
