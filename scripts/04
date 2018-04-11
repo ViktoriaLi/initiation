@@ -1,3 +1,4 @@
+#!/bin/bash
 md5sum /etc/crontab > $1
 sudo crontab -e @midnight current = md5sum /etc/crontab && if [ "$1" != "$sum" ]
 then user mail root "report" && md5sum /etc/crontab > $1 > $2
